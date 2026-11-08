@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+    
+    <!-- VÍNCULO DOS ARQUIVOS CSS EXTERNOS (O Reset deve vir sempre primeiro) -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- CSS INTERNO: Atendendo ao requisito técnico de aplicar estilo direto no head -->
+    <style>
+        /* Define uma animação discreta ou estilo extra via CSS Interno */
+        .principal section {
+            transition: transform 0.2s ease;
+        }
+        .principal section:hover {
+            transform: scale(1.02); /* Efeito de leve zoom ao passar o mouse no card */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- USO DE ID: Identificador único aplicado no título principal -->
+    <h1 id="titulo-portal">Meu Portal de Entretenimento Digital</h1>
+
+    <main class="principal">
+        
+        <!-- Seção 1: Filmes e Séries -->
+        <section class="coluna1">
+            <h2 class="titulo-secao">Filmes e Séries</h2>
+            <img src="filmes.jpg" alt="Cinema e Filmes 1">
+            <img src="filmes2.jpg" alt="Cinema e Filmes 2">
+            <p>O melhor do cinema, maratonas de séries, action, suspense e lançamentos de streaming.</p>
+            <a href="filmes.html">Acessar Categoria</a>
+        </section>
+
+        <!-- Seção 2: Música e Podcasts -->
+        <section class="coluna2">
+            <!-- CSS INLINE: Requisito técnico obrigatório aplicado direto no elemento h2 -->
+            <h2 class="titulo-secao" style="letter-spacing: 1px;">Música e Podcasts</h2>
+            <img src="fone.jpg" alt="Fone de ouvido moderno">
+            <img src="podcast.jpg" alt="Microfone de Podcast">
+            <p>Sua trilha sonora diária, playlists exclusivas e os melhores debates em áudio.</p>
+            <a href="#" onclick="alert('Bem-vindo ao Estúdio de Música e Podcasts!\n\nSua central de playlists exclusivas e os melhores debates em áudio.'); return false;">Acessar Categoria</a>
+        </section>
+
+        <!-- Seção 3: Games e Tecnologia -->
+        <section class="coluna3">
+            <h2 class="titulo-secao">Games e Tecnologia</h2>
+            <img src="games.jpg" alt="Controle de videogame 1">
+            <img src="games2.jpg" alt="Tecnologia ou Jogos 2">
+            <p>Vídeo Game Show: Notícias de eSports, jogos de ação, corrida e os novos gadgets do mercado.</p>
+            <a href="games.html">Acessar Categoria</a>
+        </section>
+
+    </main>
+
+</body>
+</html>
