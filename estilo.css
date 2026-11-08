@@ -1,0 +1,93 @@
+/* ==========================================================================
+   FOLHA DE ESTILO PRINCIPAL - PORTAL DE ENTRETENIMENTO
+   ========================================================================== */
+
+/* Configuração do plano de fundo e tipografia geral do corpo do site */
+body {
+    background-color: #1e1d20;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+}
+
+/* CONCEITO FLEXBOX: Container que alinha as 3 seções lado a lado em linha */
+.principal {
+    max-width: 950px;       /* Limita a largura para os retângulos não esticarem */
+    margin: 0 auto;         /* Centraliza o container inteiro no meio da tela */
+    display: flex;          /* Ativa o modelo Flexbox */
+    flex-direction: row;    /* Garante o alinhamento em formato de colunas/linhas */
+    justify-content: center;/* Centraliza os elementos flexíveis */
+    align-items: flex-start;/* Alinha o topo de todas as caixas */
+    gap: 15px;              /* Cria um espaçamento uniforme entre os cards */
+    width: 100%;
+}
+
+/* CLASSES: Padronização dos retângulos (cards) das categorias */
+.coluna1, .coluna2, .coluna3 {
+    display: flex;
+    flex-direction: column; /* Empilha o conteúdo interno (título, imagem, texto) */
+    align-items: center;    /* Centraliza os itens horizontalmente */
+    padding: 15px;
+    width: 30%;             /* Define uma largura equilibrada para cada bloco */
+    background-color: #2a292e; 
+    border: 2px solid rgb(6, 135, 209); 
+    border-radius: 10px;    /* Cantos arredondados do retângulo */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Sombra para dar profundidade */
+    box-sizing: border-box; /* Impede que a borda altere o tamanho fixo da caixa */
+}
+
+/* ID EXCLUSIVO: Usado para aplicar um destaque extra no título do Portal */
+#titulo-portal {
+    text-align: center;
+    color: rgb(6, 135, 209);
+    font-size: 2.2em;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-transform: uppercase; /* Coloca o título principal em letras maiúsculas */
+}
+
+/* CLASSES: Padronização das fontes de títulos internos das seções */
+.titulo-secao {
+    color: rgb(6, 135, 209);
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-size: 1.3em;
+}
+
+/* Padronização das imagens para exibição uniforme e sem distorções */
+img {
+    width: 100%;
+    max-width: 250px;
+    height: 140px;
+    object-fit: cover;     /* Recorta a imagem proporcionalmente para caber no bloco */
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Configuração estética dos parágrafos explicativos */
+p {
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilização dos botões hiperlinks de acesso */
+a:link, a:visited {
+    color: rgb(6, 135, 209);
+    margin-top: auto;       /* Força os botões a ficarem alinhados na mesma linha inferior */
+    text-decoration: none;  /* Remove o sublinhado padrão de links */
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    transition: 0.3s;       /* Suaviza a transição de cor no efeito hover */
+}
+
+/* Efeito visual interativo ao passar o mouse sobre o botão */
+a:hover {
+    background-color: rgb(6, 135, 209);
+    color: #ffffff;
+}
